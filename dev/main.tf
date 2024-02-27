@@ -24,6 +24,6 @@ variable "env" {
 }
  
 module "s3" {
-  source = "" [please put s3 repo url here ]
+  source = "https://github.com/adip47/s3forterraform?ref=main" 
   env_name = "dev"
 }
