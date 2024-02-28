@@ -24,6 +24,14 @@ variable "env" {
 }
  
 module "s3" {
-  source = "https://github.com/adip47/S3forTerraform?ref=main" 
+  source = "../../S3forTerraform" 
+  env_name = "dev"
+}
+module "sns" {
+  source = "../../SNSforTerraform" 
+  env_name = "dev"
+}
+module "sqs" {
+  source = "../../SQSforTerraform" 
   env_name = "dev"
 }
