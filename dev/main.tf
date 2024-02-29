@@ -24,14 +24,14 @@ variable "env" {
 }
  
 module "s3" {
-  source = "../../S3forTerraform" 
+  source = "../../AWSforTerraform/S3" 
   env_name = "dev"
 }
 module "sns" {
-  source = "../../SNSforTerraform" 
+  source = "../../AWSforTerraform/SNS" 
   env_name = "dev"
 }
 module "sqs" {
-  source = "../../SQSforTerraform" 
+  source = "../../AWSforTerraform/SQS" 
   env_name = "dev"
 }
